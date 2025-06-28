@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# VS Code
+.vscode/
+
+# C / C++ binaries
+*.exe
+*.out
+*.o
+*.obj
+
+# SQL dump files (если не нужны в Git)
+*.bak
+*.sql~
+
+# Java compiled files
+*.class
+
+# C# / .NET
+*.dll
+*.pdb
+*.csproj.user
+*.vs/
+bin/
+obj/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
+*.rar
+*.7z
