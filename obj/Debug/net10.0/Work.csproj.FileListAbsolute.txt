@@ -1,0 +1,14 @@
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\bin\Debug\net10.0\Work.exe
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\bin\Debug\net10.0\Work.deps.json
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\bin\Debug\net10.0\Work.runtimeconfig.json
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\bin\Debug\net10.0\Work.dll
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\bin\Debug\net10.0\Work.pdb
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\obj\Debug\net10.0\Work.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\obj\Debug\net10.0\Work.AssemblyInfoInputs.cache
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\obj\Debug\net10.0\Work.AssemblyInfo.cs
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\obj\Debug\net10.0\Work.csproj.CoreCompileInputs.cache
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\obj\Debug\net10.0\Work.dll
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\obj\Debug\net10.0\refint\Work.dll
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\obj\Debug\net10.0\Work.pdb
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\obj\Debug\net10.0\Work.genruntimeconfig.cache
+C:\Users\vikvi\OneDrive\Рабочий стол\Work\obj\Debug\net10.0\ref\Work.dll

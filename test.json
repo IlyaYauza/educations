@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0", // Версия формата tasks.json
+    "tasks": [
+        {
+            "label": "build", // Сборка C# проекта
+            "command": "dotnet", // Используется dotnet CLI
+            "type": "process", // Запуск отдельного процесса
+            "args": [
+                "build", // Команда сборки
+                "${workspaceFolder}/Work.csproj", // Путь к проекту
+                "/property:GenerateFullPaths=true", // Полные пути в выводе
+                "/consoleloggerparameters:NoSummary;ForceNoAlign" // Параметры логгера
+            ],
+            "problemMatcher": "$msCompile" // Шаблон поиска ошибок компилятора
+        },
+        {
+            "label": "run", // Запуск C# приложения
+            "command": "dotnet",
+            "type": "shell", // Shell-команда
+            "args": [
+                "run" // Запуск проекта
+            ],
+            "group": {
+                "kind": "test", // Группа задач — тесты/запуск
+                "isDefault": true // По умолчанию для группы
+            },
+            "problemMatcher": [] // Нет шаблона поиска ошибок
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/Work.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/Work.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    // Конфигурация задачи для сборки и запуска C# и C++ проектов
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Work.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "run",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "run"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/Work.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary;ForceNoAlign"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "--project",
+                "${workspaceFolder}/Work.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-cpp",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "cpp/main.cpp",
+                "-o",
+                "cpp/main.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "run-cpp",
+            "type": "shell",
+            "command": "cpp/main.exe",
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "dependsOn": "build-cpp"
+        },
+        {
+            "label": "build-java",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "java/Main.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "run-java",
+            "type": "shell",
+            "command": "java",
+            "args": [
+                "-cp",
+                "java",
+                "Main"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "dependsOn": "build-java"
+        },
+        {
+            "label": "run-python",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "python/main.py"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": false
+            },
+            "problemMatcher": []
+        }
+    ]
+}
